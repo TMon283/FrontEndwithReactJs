@@ -39,7 +39,7 @@ class LibraryV2 {
             console.log("Thư viện chưa có sách.")
             return
         }
-        console.log("📚 Danh sách sách trong thư viện:")
+        console.log("Danh sách sách trong thư viện:")
         this.bookListV2.forEach(book => {
             console.log(`ID: ${book.bookIdX}, Title: ${book.bookTitleX}, Author: ${book.bookAuthorX}, Stock: ${book.bookStockX}, Status: ${book.bookStatusX}`)
         })
@@ -66,7 +66,7 @@ class LibraryV2 {
             console.log("Thư viện chưa có thành viên.")
             return
         }
-        console.log("👥 Danh sách thành viên:")
+        console.log("Danh sách thành viên:")
         this.memberListV2.forEach(m => {
             console.log(`ID: ${m.memberIdZ}, Name: ${m.memberNameZ}, Contact: ${m.memberContactZ}, Status: ${m.memberStatusZ}`)
         })
