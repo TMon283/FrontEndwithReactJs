@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function delayedCallback(callback,a){
+     setTimeout(()=>{
+        callback();
+     },a)
+    }
+    function callback(d){
+        let t=d/1000;
+        console.log(`da goi callback sau ${t} giay`);
+        
+    }
+let a=+prompt("nhap thoi gian");
+delayedCallback(callback(a),a);
+</script>
+</html>

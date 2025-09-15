@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const numbers=[1,2,2,3,4,5,6,7]
+    function myFilter(arr,t,callback){
+        let arr1=[];
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i]==t) {
+            arr1[i]=arr[i];
+        }
+      }
+            callback(arr1);
+    }
+  function callback(arr){
+    console.log(arr);
+  }
+  myFilter(numbers,2,callback);
+</script>
+</html>

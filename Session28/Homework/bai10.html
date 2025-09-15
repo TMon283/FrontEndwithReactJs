@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let task = [];
+
+      function addTask(callback) {
+        let name = prompt("Nhap ten:");
+        if (!name) {
+          alert("thong tin khong dc de trong");
+          return;
+        }
+        for (let i = 0; i < task.length; i++) {
+          if (task[i].name === name) {
+            callback(2);
+            return;
+          }
+        }
+        task.push({ id: task.length + 1, name: name });
+        console.log(task);
+        callback(1);
+      }
+      function deleteTask(callback) {
+        let name = prompt("Nhap ten muon xoa:");
+        if (!name) {
+          alert("thong tin khong dc de trong");
+          return;
+        }
+        let check = -1;
+        for (let i = 0; i < task.length; i++) {
+          if (task[i].name === name) {
+            check = i;
+            break;
+          }
+        }
+        if (check == -1) {
+          callback(3);
+          return;
+        } else {
+          task = task.filter((i) => i.name !== name);
+          callback(4);
+        }
+      }
+      function callback(a) {
+        if (a==1) {
+          alert("Them thanh cong");
+        } else if (a==2) {
+          alert("cong viec da ton tai ");
+        } else if (a==3) {
+          alert("cong viec khong ton tai");
+        } else {
+          alert("Xoa thanh cong");
+        }
+      }
+
+      function displayTasks() {
+        document.body.innerHTML = "<h2>Danh sach cong viec:</h2>";
+        task.forEach((t) => {
+          document.body.innerHTML += `<p>${t.id}. ${t.name}</p>`;
+        });
+      }
+
+      let choice;
+      do {
+        choice = +prompt(`
+      1 . Them cong viec
+      2 . Xoa cong viec
+      3 . Hien thi cong viec
+      4 . Thoat
+      Lua chon cua ban : 
+    `);
+
+        switch (choice) {
+          case 1:
+            addTask(callback);
+            break;
+          case 2:
+            deleteTask(callback);
+            break;
+          case 3:
+            displayTasks();
+            break;
+          case 4:
+            console.log("chuong trinh ket thuc");
+            break;
+          default:
+            console.log("lua chon khong hop le");
+            break;
+        }
+      } while (choice != 4);
+    </script>
+  </body>
+</html>

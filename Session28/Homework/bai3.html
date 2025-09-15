@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr=[1,2,3,4,5,6];
+    function processArray(callback,arr) {
+        for (let i = 0; i < arr.length; i++) {
+            setTimeout(()=>{
+                callback(i+1,arr[i]);
+            },1000*i)
+        }
+    }
+    function callback(i,a){
+      console.log(`Phan tu thu ${i}:${a}`);
+    }
+    processArray(callback,arr);
+</script>
+</html>
