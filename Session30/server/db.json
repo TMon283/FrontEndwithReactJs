@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "an",
+      "email": "an@gmail.com",
+      "age": 19
+    },
+    {
+      "id": 2,
+      "name": "anh",
+      "email": "anh@gmail.com",
+      "age": 20
+    },
+    {
+      "id": 3,
+      "name": "chien",
+      "email": "chien@gmail.com",
+      "age": 19
+    }
+  ],
+  "jobs": [
+    {
+      "taskName": "Nau an",
+      "status": false,
+      "id": 1
+    },
+    {
+      "taskName": "Lam bai tap",
+      "status": true,
+      "id": 2
+    }
+  ]
+}

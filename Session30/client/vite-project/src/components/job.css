@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center ;
+}
+.container1{
+    margin-top: 10px;
+}
+
+  h1{
+    font-size: 30px;
+  }
+.input{
+    border: 1px;
+}

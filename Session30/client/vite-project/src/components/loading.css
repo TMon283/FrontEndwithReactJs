@@ -1,0 +1,19 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 5px solid red;
+  border-right: 5px solid green;
+  border-bottom: 5px solid yellow;
+  border-top: 5px solid violet;
+  animation: circle 0.2s linear infinite; /* sửa tên + cú pháp */
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
