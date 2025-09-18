@@ -1,0 +1,25 @@
+{
+    "posts":[
+        {
+            "id":1,
+            "title":"Học reactjs",
+            "image":"typicode",
+            "date": "17/9",
+            "status": true
+        },
+        {
+            "id":2,
+            "title":"Học C",
+            "image":"typicode",
+            "date": "18/9",
+            "status": false
+        },
+        {
+            "id":3,
+            "title":"Học DSA",
+            "image":"typicode",
+            "date": "19/9",
+            "status": true
+        }
+    ]
+}
