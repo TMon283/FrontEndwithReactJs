@@ -30,11 +30,11 @@
     }
     async function addPost(){
       if(newPost.title=="" || newPost.image=="" || newPost.content==""){
-        alert("Khong duoc de trong thong tin");
+        alert("Không được để trống thông tin");
         return;
       }
       if(posts.some((post) => post.title == newPost.title && post.id!=updateId)){
-        alert("Ten bai dang da ton tai");
+        alert("Tên bài đăng đã tồn tại");
         return;
       }
       if(updateId==-1){
@@ -49,43 +49,43 @@
       setUpdateId(-1)
     }
     async function blockPost(id: number){
-      if(confirm("Chan/Bo chan bai viet?")){
+      if(confirm("Chặn/Bỏ chặn bài viết?")){
         await axios.patch(`http://localhost:8080/posts/${id}`, {status: !posts.find((post) => post.id==id)?.status});
         getData();
       }
     }
     async function deletePost(id: number){
-      if(confirm("Xoa bai dang nay?")){
+      if(confirm("Xóa bài đăng?")){
         await axios.delete(`http://localhost:8080/posts/${id}`);
         getData();
       }
     }
     return (
       <div className='w-screen flex flex-col justify-center items-center'>
-        <h1 className='text-[25px] text-center mb-[10px]'>Quan li bai viet</h1>
+        <h1 className='text-[25px] text-center mb-[10px]'>Quản lý bài viết</h1>
         <div className='w-[800px]'>
           <div className='flex justify-between'>
             <div className='flex gap-[10px]'>
                 <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)} className='h-[34px] border rounded-[5px] pl-[5px] pr-[5px]' type="text" placeholder='Nhap tu khoa tim kiem'/>
                 <select onChange={(e: React.ChangeEvent<HTMLSelectElement>)=>setFilter(e.target.value)} defaultValue={""} name="" className='h-[34px] border rounded-[5px]'>
-                    <option value="" disabled hidden>Loc bai viet</option>
-                    <option value="true">Da xuat ban</option>
-                    <option value="false">Ngung xuat ban</option>
+                    <option value="" disabled hidden>Lọc bài viết</option>
+                    <option value="true">Đã xuất bản</option>
+                    <option value="false">Ngưng xuất bản</option>
                 </select>
             </div>
             <div>
-                <button onClick={() => setShowModal(true)} className='bg-blue-500 text-white rounded-[5px] p-[5px]'>Them bai viet</button>
+                <button onClick={() => setShowModal(true)} className='bg-blue-500 text-white rounded-[5px] p-[5px]'>Thêm bài viết</button>
             </div>
           </div>
           <table className='w-[100%] mt-[15px]'>
             <thead className='h-[35px]'>
               <tr>
                 <th>STT</th>
-                <th>Tieu de</th>
-                <th>Hinh anh</th>
-                <th>Ngay viet</th>
-                <th>Trang thai</th>
-                <th>Chuc nang</th>
+                <th>Tiêu đề</th>
+                <th>Hình ảnh</th>
+                <th>Ngày viết</th>
+                <th>Trạng thái</th>
+                <th>Chức năng</th>
               </tr>
             </thead>
             <tbody>
@@ -95,11 +95,11 @@
                   <td className='text-center'>{post.title}</td>
                   <td className='flex justify-center align-center'><img className='rounded-[100%] w-[30px] h-[30px]' src={post.image} alt="img"/></td>
                   <td className='text-center'>{post.createdAt}</td>
-                  <td className='text-center'>{post.status ? "Da xuat ban" : "Ngung xuat ban"}</td>
+                  <td className='text-center'>{post.status ? "Đã xuất bản" : "Ngưng xuất bản"}</td>
                   <td className='flex justify-around'>
-                    <button onClick={()=>blockPost(post.id)} className='rounded-[4px] bg-amber-400 text-white p-[3px] min-w-[66px]'>{post.status ? "Chan" : "Bo chan"}</button>
-                    <button onClick={()=>{setShowModal(true); setUpdateId(post.id); setNewPost(post)}} className='rounded-[4px] bg-orange-400 text-white w-[66px]'>Sua</button>
-                    <button onClick={()=>deletePost(post.id)} className='rounded-[4px] bg-red-400 text-white w-[66px]'>Xoa</button>
+                    <button onClick={()=>blockPost(post.id)} className='rounded-[4px] bg-amber-400 text-white p-[3px] min-w-[66px]'>{post.status ? "Chặn" : "Bỏ chặn"}</button>
+                    <button onClick={()=>{setShowModal(true); setUpdateId(post.id); setNewPost(post)}} className='rounded-[4px] bg-orange-400 text-white w-[66px]'>Sửa</button>
+                    <button onClick={()=>deletePost(post.id)} className='rounded-[4px] bg-red-400 text-white w-[66px]'>Xóa</button>
                   </td>
                 </tr>
               })}
@@ -156,7 +156,7 @@
                     className="px-4 py-2 bg-blue-500 text-white rounded-lg"
                     onClick={addPost}
                   >
-                    Xuat ban
+                    Xuất bản
                   </button>
                 </div>
               </div>
