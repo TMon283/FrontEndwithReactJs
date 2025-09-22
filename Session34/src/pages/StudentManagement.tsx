@@ -26,6 +26,11 @@ const StudentManagement = () => {
   }, [students, keyword]);
 
   const handleAddStudent = (student: Student) => {
+    const isDuplicated = students.some((s) => s.id === student.id);
+    if (isDuplicated) {
+      alert('Mã sinh viên đã tồn tại. Vui lòng nhập mã khác.');
+      return;
+    }
     dispatch({ type: 'ADD_STUDENT', payload: student });
     setMode('idle');
     setSelected(null);
