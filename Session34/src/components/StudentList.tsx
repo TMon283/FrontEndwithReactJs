@@ -50,7 +50,7 @@ const StudentList: React.FC<StudentListProps> = ({ students, onView, onEdit, onD
                 <TableCell>{s.gender}</TableCell>
                 <TableCell>
                   <div className="flex gap-2">
-                    <Button variant="contained" color="error" onClick={() => onView(s)}>
+                    <Button variant="contained" color="success" onClick={() => onView(s)}>
                       Xem
                     </Button>
                     <Button variant="contained" color="warning" onClick={() => onEdit(s)}>
@@ -58,7 +58,7 @@ const StudentList: React.FC<StudentListProps> = ({ students, onView, onEdit, onD
                     </Button>
                     <Button
                       variant="contained"
-                      color="success"
+                      color="error"
                       onClick={() => onDelete(s)}
                     >
                       Xóa
