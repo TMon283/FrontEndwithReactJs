@@ -1,7 +1,7 @@
 import React from 'react'
 import Counter from './components/Counter'
 import StudentManager from './components/StudentManager'
-import RanDom from "./components/RanDom"
+import Random from "./components/RanDom"
 import Dark from './components/Dark'
 import ListMode from './components/ListMode'
 import Menu from './components/Menu'
@@ -14,7 +14,7 @@ export default function App() {
     <hr />
     <StudentManager></StudentManager>
     <hr />
-     <RanDom></RanDom> 
+     <Random></Random> 
      <hr />
      <Dark></Dark>
      <hr />

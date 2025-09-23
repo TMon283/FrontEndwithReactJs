@@ -8,11 +8,9 @@ const counterSlice =createSlice({
     },
     reducers:{
         increment:(state)=>{
-            // eslint-disable-next-line @typescript-eslint/no-unused-expressions
             state.value+=1;
         },
         reduce:(state)=>{
-            // eslint-disable-next-line @typescript-eslint/no-unused-expressions
             state.value-=1;
         }
     }

@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { random } from '../store/slice/ranDom';
 
-export default function RanDom() {
+export default function Random() {
     const reslut = useSelector((data:any) => {
         return data.random.arr
     });
