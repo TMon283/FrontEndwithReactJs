@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "taskName": "Learn TypeScript",
+      "completed": true,
+      "priority": "medium"
+    },
+    {
+      "id": 2,
+      "taskName": "Build Todo App",
+      "completed": false,
+      "priority": "high"
+    },
+    {
+      "taskName": "Đọc sách",
+      "completed": false,
+      "priority": "low",
+      "id": 3
+    }
+  ]
+}
