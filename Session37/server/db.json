@@ -1,0 +1,45 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "name": "Trung Chiến",
+      "age": 19,
+      "grade": "10A3"
+    },
+    {
+      "id": 6,
+      "name": "Yên Chi",
+      "age": 19,
+      "grade": "10A3"
+    },
+    {
+      "name": "Minh Thư",
+      "age": 16,
+      "grade": "10A3",
+      "id": 11
+    },
+    {
+      "id": 13,
+      "name": "Phạm Hưng",
+      "age": 16,
+      "grade": "10a2"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
