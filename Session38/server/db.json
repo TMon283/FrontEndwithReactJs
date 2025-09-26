@@ -1,0 +1,53 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Doraemon",
+      "author": "Fujiko F. Fujio",
+      "year": 1969,
+      "category": "Manga"
+    },
+    {
+      "title": "Dragon Ball",
+      "author": "Toriyama Akira",
+      "year": 1984,
+      "category": "Manga",
+      "id": 2
+    },
+    {
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "year": 2019,
+      "category": "Psychological Thriller",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "year": 2018,
+      "category": "Self-help"
+    },
+    {
+      "title": "The Midnight Library",
+      "author": "Matt Haig",
+      "year": 2020,
+      "category": "Fantasy",
+      "id": 6
+    },
+    {
+      "title": "Naruto",
+      "author": "Kishimoto Masashi",
+      "year": 1999,
+      "category": "Manga",
+      "id": 7
+    },
+    {
+      "title": "One Piece",
+      "author": "Oda Eiichiro",
+      "year": 1997,
+      "category": "Manga",
+      "id": 8
+    }
+  ]
+}
