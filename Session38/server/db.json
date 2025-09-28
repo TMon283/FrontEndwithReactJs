@@ -25,29 +25,22 @@
       "id": 4,
       "title": "Atomic Habits",
       "author": "James Clear",
-      "year": 2018,
+      "year": 2019,
       "category": "Self-help"
-    },
-    {
-      "title": "The Midnight Library",
-      "author": "Matt Haig",
-      "year": 2020,
-      "category": "Fantasy",
-      "id": 6
     },
     {
       "title": "Naruto",
       "author": "Kishimoto Masashi",
       "year": 1999,
       "category": "Manga",
-      "id": 7
+      "id": 6
     },
     {
       "title": "One Piece",
       "author": "Oda Eiichiro",
       "year": 1997,
       "category": "Manga",
-      "id": 8
+      "id": 7
     }
   ]
 }
