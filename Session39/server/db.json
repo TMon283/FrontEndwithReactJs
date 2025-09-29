@@ -1,0 +1,38 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "link": "https://res.cloudinary.com/dsuh0sloa/image/upload/v1759152491/doem9yiyumauqzahnikr.jpg",
+      "comment": "fghjasdfghjsdfghjasdfghj"
+    },
+    {
+      "id": 2,
+      "link": "https://res.cloudinary.com/dsuh0sloa/image/upload/v1759152503/andlz5und2bcalsvz8w5.jpg",
+      "comment": "fg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iphone13",
+      "image": ""
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
