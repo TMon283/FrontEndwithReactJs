@@ -1,0 +1,47 @@
+{
+  "products": [
+    {
+      "id": "c7766bfa-19cf-481b-8c28-315ef51f4596",
+      "code": "SP5185",
+      "name": "Áo sơ mi",
+      "category": "Áo",
+      "price": 123,
+      "image": "http://res.cloudinary.com/dsuh0sloa/image/upload/v1759239406/ocfsbb4vtjkxyudtbkft.jpg",
+      "status": "active"
+    },
+    {
+      "id": "0563aace-f169-40af-928d-f4ae52a16191",
+      "code": "SP3768",
+      "name": "Học C",
+      "category": "Quần",
+      "price": 1234,
+      "image": "http://res.cloudinary.com/dsuh0sloa/image/upload/v1759239395/cywtxh165ozwqajkef3k.jpg",
+      "status": "active"
+    },
+    {
+      "id": "8e78a559-a716-4f0d-9ffa-3c93614933e9",
+      "code": "SP437",
+      "name": "Học C",
+      "category": "Áo",
+      "price": 1221,
+      "image": "http://res.cloudinary.com/dsuh0sloa/image/upload/v1759239372/w2cxs7dcjnmi504kluu3.jpg",
+      "status": "active"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Quần"
+    },
+    {
+      "id": 2,
+      "name": "Áo"
+    },
+    {
+      "id": "e61277b0-5d5f-4e2e-8940-5bca1fc8697b",
+      "name": "Áo sơ mi",
+      "description": "",
+      "status": "active"
+    }
+  ]
+}
