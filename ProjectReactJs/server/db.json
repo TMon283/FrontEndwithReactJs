@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "email": "john@gmail.com",
+      "password": "hashed_password"
+    },
+    {
+      "username": "Hoàng Thái Minh",
+      "email": "lemonboy2k6@gmail.com",
+      "password": "28032006",
+      "id": 2
+    }
+  ]
+}
